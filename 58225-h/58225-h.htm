@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ASCII">
+<title>The Project Gutenberg eBook of Primes to One Trillion, by Don Kostuch</title>
+<style type="text/css">
+
+body 
+{
+  /*  margin-left:  10%; */
+    margin-right: 10%;
+	word-spacing: .05em;
+}
+
+h1 {font-size: 160%;  text-align:center;}
+
+h2 {font-size: 140%;  text-align:center;}
+
+h3 {font-size: 100%;  text-align:center;}
+
+.header_add {font-size: 100%;  
+             font-weight: bold;
+             text-align:center;}
+
+i  { font-weight: bold; }
+
+xmp  { font-weight: bold; }
+
+hr { width: 60% ; }
+
+small { font-size: 60%; }
+
+pre       { font-family: Serif; }
+
+table { border-collapse: collapse; }
+
+table, th, td 
+{
+  border: 1px solid black;
+  border-collapse: collapse; 
+}
+
+td 
+{
+  padding: 5px ;
+}
+
+.center pre {
+  display: inline-block;
+  text-align: left;
+ }
+
+.center table {
+  display: inline-block;
+  text-align: left;
+ }
+
+.cite     { margin-left: 5%; }
+
+.cite2    { margin-left: 10%; }
+
+.footnote { margin-left: 8%; margin-right: 8%;}
+
+.footnote2 { margin-left: 13%; margin-right: 8%;}
+
+.footnote_color { background-color: #ddddff; }
+
+.center   { text-align: center; }
+
+.center_close  { text-align: center; 
+                 margin-top: -2%; }
+
+.image   { text-align: center; }
+
+.txtimg   { 
+            width:  auto; 
+            height: 1.3em;
+			vertical-align: -30%;
+			border-width: 0px; 
+          }
+
+.right    { text-align: right; }
+
+.source   { font-family:courier; font-weight:bold; }
+
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: smaller;
+    text-align: right;
+} /* page numbers */
+
+</style>
+</head>
+<body>
+<h1>The Project Gutenberg eBook, Primes to One Trillion, Edited by Don Kostuch</h1>
+<p>This eBook is for the use of anyone anywhere in the United States
+and most other parts of the world at no cost and with almost no
+restrictions whatsoever.  You may copy it, give it away or re-use it
+under the terms of the Project Gutenberg License included with this
+eBook or online at <a
+href="http://www.gutenberg.org">www.gutenberg.org</a>.  If you are not
+located in the United States, you'll have to check the laws of the
+country where you are located before using this ebook.</p>
+<p>Title: Primes to One Trillion</p>
+<p>Editor: Don Kostuch</p>
+<p>Release Date: November 3, 2018  [eBook #58225]</p>
+<p>Language: English</p>
+<p>Character set encoding: ASCII</p>
+<p>***START OF THE PROJECT GUTENBERG EBOOK PRIMES TO ONE TRILLION***</p>
+<h1>
+        Primes to One Trillion
+</h1>
+
+<p>
+The Gutenberg text "The First 100,000 Prime Numbers", EBook #65,
+lists the primes up to 1,318,699.
+This somewhat more ambitious version lists the primes up to
+one trillion (1,000,000,000,000 or 1E12).
+</p>
+<br>
+<h2>Introduction</h2>
+<p>
+I became interested in prime numbers after hearing about  
+<a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">
+Goldbach's Conjecture,</a>
+</p>
+<p class="cite">
+"Every even integer greater than 2 can
+be expressed as the sum of two primes". 
+</p>
+<p>
+Verifying this requires a source of primes. Short lists (or programs to 
+generate them) are widely available. Really long lists are scarce, except 
+for<br>
+<a href="http://primos.mat.br/indexen.html">
+primos.mat.br.</a>
+</p>
+<p>
+To make these lists more accessible,
+I have reformatted them to a size easily manageable
+by ordinary text editors and viewers--about 55MB.
+The file names correspond to the range of primes the
+file contains:
+</p>
+<table>
+<tr><td>00000000000_to_00100000000.txt</td><td>Zero to 100 Million</td></tr>
+<tr><td>00100000000_to_00200000000.txt</td><td>100 Million to 200 Million</td></tr>
+<tr><td>etc.</td><td></td></tr>
+</table>
+<p>
+The leading zero digits cause the file names to collate in order of their 
+content. Longer lists can be composed with the DOS copy command. Move the 
+required prime txt files to a temporary directory and use:
+</p>
+<p class="cite">
+<span class="source">   copy *.txt longList.txt</span>
+</p>
+<p>
+
+</p>
+<br>
+<hr>
+<br>
+<h2>Prime Text Files</h2>
+<p>
+This is a collection of 10,000 files, occupying about 486GB of disk space
+in their unzipped native txt format.
+Since adjacent primes have about 90% identical leading digits,
+the compressed (zip) versions total 61GB. Each zip file
+contains 100 txt files.
+</p>
+<p>
+Do not use Windows Explorer to copy or move large numbers of
+files at a time.
+Use DOS <span class="source">copy</span> or
+<span class="source">xcopy</span> for large copies. 
+I find <i>Beyond Compare</i>
+(Scooter Software) handy for keeping track of large numbers of files.
+</p>
+<p>
+The following zip file names denotes the start of a range of primes
+in billions (1,000,000,000), and covers a range of 10,000,000,000.
+Each zip file contains 100 txt files, each covering the primes in 
+a range of 100,000,000.
+</p>
+<pre>
+  <a href="../primefiles/0000.zip">0000.zip</a>    000G to  010G (0 to 1E10)
+  <a href="../primefiles/0010.zip">0010.zip</a>    010G to  020G
+  <a href="../primefiles/0020.zip">0020.zip</a>    020G to  030G
+  <a href="../primefiles/0030.zip">0030.zip</a>    030G to  040G
+  <a href="../primefiles/0040.zip">0040.zip</a>    040G to  050G
+  <a href="../primefiles/0050.zip">0050.zip</a>    050G to  060G
+  <a href="../primefiles/0060.zip">0060.zip</a>    060G to  070G
+  <a href="../primefiles/0070.zip">0070.zip</a>    070G to  080G
+  <a href="../primefiles/0080.zip">0080.zip</a>    080G to  090G
+  <a href="../primefiles/0090.zip">0090.zip</a>    090G to  100G
+
+  <a href="../primefiles/0100.zip">0100.zip</a>    100G to  110G
+  <a href="../primefiles/0110.zip">0110.zip</a>    110G to  120G
+  <a href="../primefiles/0120.zip">0120.zip</a>    120G to  130G
+  <a href="../primefiles/0130.zip">0130.zip</a>    130G to  140G
+  <a href="../primefiles/0140.zip">0140.zip</a>    140G to  150G
+  <a href="../primefiles/0150.zip">0150.zip</a>    150G to  160G
+  <a href="../primefiles/0160.zip">0160.zip</a>    160G to  170G
+  <a href="../primefiles/0170.zip">0170.zip</a>    170G to  180G
+  <a href="../primefiles/0180.zip">0180.zip</a>    180G to  190G
+  <a href="../primefiles/0190.zip">0190.zip</a>    190G to  100G
+ 
+  <a href="../primefiles/0200.zip">0200.zip</a>    200G to  210G
+  <a href="../primefiles/0210.zip">0210.zip</a>    210G to  220G
+  <a href="../primefiles/0220.zip">0220.zip</a>    220G to  230G
+  <a href="../primefiles/0230.zip">0230.zip</a>    230G to  240G
+  <a href="../primefiles/0240.zip">0240.zip</a>    240G to  250G
+  <a href="../primefiles/0250.zip">0250.zip</a>    250G to  260G
+  <a href="../primefiles/0260.zip">0260.zip</a>    260G to  270G
+  <a href="../primefiles/0270.zip">0270.zip</a>    270G to  280G
+  <a href="../primefiles/0280.zip">0280.zip</a>    280G to  290G
+  <a href="../primefiles/0290.zip">0290.zip</a>    290G to  200G
+
+  <a href="../primefiles/0300.zip">0300.zip</a>    300G to  310G
+  <a href="../primefiles/0310.zip">0310.zip</a>    310G to  320G
+  <a href="../primefiles/0320.zip">0320.zip</a>    320G to  330G
+  <a href="../primefiles/0330.zip">0330.zip</a>    330G to  340G
+  <a href="../primefiles/0340.zip">0340.zip</a>    340G to  350G
+  <a href="../primefiles/0350.zip">0350.zip</a>    350G to  360G
+  <a href="../primefiles/0360.zip">0360.zip</a>    360G to  370G
+  <a href="../primefiles/0370.zip">0370.zip</a>    370G to  380G
+  <a href="../primefiles/0380.zip">0380.zip</a>    380G to  390G
+  <a href="../primefiles/0390.zip">0390.zip</a>    390G to  300G
+
+  <a href="../primefiles/0400.zip">0400.zip</a>    400G to  410G
+  <a href="../primefiles/0410.zip">0410.zip</a>    410G to  420G
+  <a href="../primefiles/0420.zip">0420.zip</a>    420G to  430G
+  <a href="../primefiles/0430.zip">0430.zip</a>    430G to  440G
+  <a href="../primefiles/0440.zip">0440.zip</a>    440G to  450G
+  <a href="../primefiles/0450.zip">0450.zip</a>    450G to  460G
+  <a href="../primefiles/0460.zip">0460.zip</a>    460G to  470G
+  <a href="../primefiles/0470.zip">0470.zip</a>    470G to  480G
+  <a href="../primefiles/0480.zip">0480.zip</a>    480G to  490G
+  <a href="../primefiles/0490.zip">0490.zip</a>    490G to  400G
+
+  <a href="../primefiles/0500.zip">0500.zip</a>    500G to  510G
+  <a href="../primefiles/0510.zip">0510.zip</a>    510G to  520G
+  <a href="../primefiles/0520.zip">0520.zip</a>    520G to  530G
+  <a href="../primefiles/0530.zip">0530.zip</a>    530G to  540G
+  <a href="../primefiles/0540.zip">0540.zip</a>    540G to  550G
+  <a href="../primefiles/0550.zip">0550.zip</a>    550G to  560G
+  <a href="../primefiles/0560.zip">0560.zip</a>    560G to  570G
+  <a href="../primefiles/0570.zip">0570.zip</a>    570G to  580G
+  <a href="../primefiles/0580.zip">0580.zip</a>    580G to  590G
+  <a href="../primefiles/0590.zip">0590.zip</a>    590G to  500G
+
+  <a href="../primefiles/0600.zip">0600.zip</a>    600G to  610G
+  <a href="../primefiles/0610.zip">0610.zip</a>    610G to  620G
+  <a href="../primefiles/0620.zip">0620.zip</a>    620G to  630G
+  <a href="../primefiles/0630.zip">0630.zip</a>    630G to  640G
+  <a href="../primefiles/0640.zip">0640.zip</a>    640G to  650G
+  <a href="../primefiles/0650.zip">0650.zip</a>    650G to  660G
+  <a href="../primefiles/0660.zip">0660.zip</a>    660G to  670G
+  <a href="../primefiles/0670.zip">0670.zip</a>    670G to  680G
+  <a href="../primefiles/0680.zip">0680.zip</a>    680G to  690G
+  <a href="../primefiles/0690.zip">0690.zip</a>    690G to  600G
+
+  <a href="../primefiles/0700.zip">0700.zip</a>    700G to  710G
+  <a href="../primefiles/0710.zip">0710.zip</a>    710G to  720G
+  <a href="../primefiles/0720.zip">0720.zip</a>    720G to  730G
+  <a href="../primefiles/0730.zip">0730.zip</a>    730G to  740G
+  <a href="../primefiles/0740.zip">0740.zip</a>    740G to  750G
+  <a href="../primefiles/0750.zip">0750.zip</a>    750G to  760G
+  <a href="../primefiles/0760.zip">0760.zip</a>    760G to  770G
+  <a href="../primefiles/0770.zip">0770.zip</a>    770G to  780G
+  <a href="../primefiles/0780.zip">0780.zip</a>    780G to  790G
+  <a href="../primefiles/0790.zip">0790.zip</a>    790G to  700G
+
+  <a href="../primefiles/0800.zip">0800.zip</a>    800G to  810G
+  <a href="../primefiles/0810.zip">0810.zip</a>    810G to  820G
+  <a href="../primefiles/0820.zip">0820.zip</a>    820G to  830G
+  <a href="../primefiles/0830.zip">0830.zip</a>    830G to  840G
+  <a href="../primefiles/0840.zip">0840.zip</a>    840G to  850G
+  <a href="../primefiles/0850.zip">0850.zip</a>    850G to  860G
+  <a href="../primefiles/0860.zip">0860.zip</a>    860G to  870G
+  <a href="../primefiles/0870.zip">0870.zip</a>    870G to  880G
+  <a href="../primefiles/0880.zip">0880.zip</a>    880G to  890G
+  <a href="../primefiles/0890.zip">0890.zip</a>    890G to  800G
+
+  <a href="../primefiles/0900.zip">0900.zip</a>    900G to  910G
+  <a href="../primefiles/0910.zip">0910.zip</a>    910G to  920G
+  <a href="../primefiles/0920.zip">0920.zip</a>    920G to  930G
+  <a href="../primefiles/0930.zip">0930.zip</a>    930G to  940G
+  <a href="../primefiles/0940.zip">0940.zip</a>    940G to  950G
+  <a href="../primefiles/0950.zip">0950.zip</a>    950G to  960G
+  <a href="../primefiles/0960.zip">0960.zip</a>    960G to  970G
+  <a href="../primefiles/0970.zip">0970.zip</a>    970G to  980G
+  <a href="../primefiles/0980.zip">0980.zip</a>    980G to  990G
+  <a href="../primefiles/0990.zip">0990.zip</a>    990G to 1000G
+</pre>
+<br>
+<hr>
+<br>
+<h1><i>PrimeC</i> File Format and<br>Miscellaneous C++ Programs</h1>
+<br>
+<p>
+While working with primes, I developed the <i>primec</i> format,
+a file or array representation for primes that is roughly the same
+size of the compressed (zipped) txt representation,
+and supports fast access, both sequential and direct.
+The exact location of the primality specification of any number in
+the file (or memory array) is computed with a few instructions
+and no search. 
+</p>
+<p>
+If you wish to examine and experiment with the C++ programs
+used to reformat these prime lists and test the Goldbach
+Conjecture, download the "programs.zip" package. 
+It contains <i>Generating and Analyzing Prime Numbers</i>,
+a description of the content and use of these files,
+including the <i>primec</i> file format. 
+</p>
+<hr>
+<br>
+<h2><i>Primec</i> Format</h2>
+<p>
+The <i>primec</i> format exploits the fact that all primes greater
+than 5 end in the decimal digits 1, 3, 7, or 9. Thus, 
+the primality of 20 successive numbers can be specified
+in one 8 bit byte. The file begins with the complete binary
+representation of:
+</p>
+<p class="cite">
+  The beginning of the sequence<br>
+  The end of the sequence<br>
+  A check sum of all data bytes<br>
+  (All three are 8 bytes for this implementation).
+</p>
+<p>
+The first and last values are a multiple of twenty, 
+thus are never primes. There is no
+overlap of primes between successive files that use the same
+number for the upper boundary of the first file, and the lower
+boundary of the second file.
+</p>
+<p>
+The primality of any number in the range of the file 
+is determined as follows:
+</p>
+<p class="cite">
+If the number ends in 0, 2, 4, 5, 6, or 8, it is not prime.<br><br>
+Otherwise, the location of the specifying byte is at offset:<br><br>
+<span class="source">( value - start ) / 20</span><br><br>
+Within that byte, the primality of the value is specified by
+the bit as shown in the following table.
+</p>
+<p>
+The only tedious programming tasks were:
+</p>
+<p class="cite">
+Special case code for values less than 20, which include 2 and 5,
+and exclude 1 and 9. All larger values follow the same simple pattern.
+<br><br>
+The increment and decrement
+operators for the corresponding iterators must search
+forward (or backward) for the next true bit, specifying
+the next prime number. 
+</p>
+<p>
+This table shows the layout and content for
+a file containing 20 to 60. The first 24 bytes
+(start value, end value, check sum) are not shown.
+</p>
+<table>
+<tr>
+<td>Byte</td>
+<td colspan="8">0</td>
+<td colspan="8">1</td>
+</tr>
+<tr>
+<td>Bit</td>
+<td>0</td><td>1</td><td>2</td><td>3</td>
+<td>4</td><td>5</td><td>6</td><td>7</td>
+<td>0</td><td>1</td><td>2</td><td>3</td>
+<td>4</td><td>5</td><td>6</td><td>7</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>21</td><td>23</td><td>27</td><td>29</td>
+<td>31</td><td>33</td><td>37</td><td>39</td>
+<td>41</td><td>43</td><td>47</td><td>49</td>
+<td>51</td><td>53</td><td>57</td><td>59</td>
+</tr>
+<tr>
+<td>Prime</td>
+<td>F</td><td>T</td><td>F</td><td>T</td>
+<td>T</td><td>F</td><td>T</td><td>F</td>
+<td>T</td><td>T</td><td>T</td><td>F</td>
+<td>F</td><td>T</td><td>F</td><td>T</td>
+</tr>
+<tr>
+<td>Hex</td>
+<td colspan="8">5A</td>
+<td colspan="8">E5</td>
+</tr>
+</table>
+<p>
+As primes become larger, the density of primes becomes 
+smaller as <span class="source">1/ln(n)</span>.
+Thus the density of true bits also falls off. 
+The number of digits (binary or decimal) to represent the
+primes grows as <span class="source">ln(n)</span>.
+Thus, a sequence of primes represented as
+<i>primec</i> is always competitive in size with the corresponding
+sequence in ASCI text or binary, besides providing fast
+direct access by value:
+</p>
+<p class="cite">
+<span class="source">bool isPrime(value)</span>.
+</p>
+<p>
+The results for the sequence of the largest 64 bit primes 
+(18446744073707000000 to 18446744073709551558) is:
+</p>
+<table style="margin: 0px auto;">
+<tr><td>Format</td><td>Size<br>(KB)</td></tr>
+<tr><td>64 Bit Binary</td><td class="right">445</td></tr>
+<tr><td>Txt</td><td class="right">1150</td></tr>
+<tr><td>Zip Txt</td><td class="right">114</td></tr>
+<tr><td>PrimeC</td><td class="right">125</td></tr>
+</table>
+
+<br>
+<hr>
+
+<br>
+<h2>Programs</h2>
+<p>
+Among the programs in the "program.zip" package are:
+</p>
+<table>
+<tr><td>BuildTxtPrime</td>
+	<td>Create file of primes, txt format</td>
+</tr>
+<tr><td>TxtToPrimeC</td>
+	<td>Convert txt to <i>primec</i> format.</td>
+</tr>
+<tr><td>Goldbach</td>
+	<td>Verify Goldbach's conjecture<br>
+	    for zero to 1E12</td>
+</tr>
+</table>
+<p>
+Among the more than 15 classes and utilities are:
+</p>
+<table>
+<tr>
+	<td>PrimeGenerator</td>
+	<td>Create prime numbers in a given range.</td>
+</tr>
+<tr>
+	<td>Directory</td>
+	<td>A vector of strings containing the names of files in a file directory.</td>
+</tr>
+<tr>
+	<td>Progress</td>
+	<td>A class to manage the periodic reporting of program activity.</td>
+</tr>
+<tr>
+	<td>PrimeCVector</td>
+	<td>Abstract class providing the algorithms to access <i>primec</i> data.</td>
+</tr>
+<tr>
+	<td>PrimeCFileWriter</td>
+	<td>Create a <i>primec</i> file.</td>
+</tr>
+<tr>
+	<td>PrimeCFileReader</td>
+	<td>Read a <i>primec</i> file.</td>
+</tr>
+</table>
+<p>
+I hope you find them useful.
+</p>
+<p>
+If you have any questions, observations or bug reports 
+concerning the C++ programming or the content of
+the prime files, send an email (after changing "at" to "@".
+</p>
+<p class="cite">
+primes1e12 at earthlink.net
+</p>
+<p>
+I embarked on this project as a programming challenge.
+I am not a mathematician. I have no deep insight into
+prime number theory. Please confine messages to programming
+issues. Here are some references:
+</p>
+<p class="cite">
+    <a href="http://www.primos.mat.br/indexen.html">Prime Numbers</a><br>
+    <a href="https://en.wikipedia.org/wiki/List_of_prime_numbers">Wikipedia: List of Prime Numbers (with numerous references)</a><br>
+    <a href="http://mathforum.org/dr.math/faq/faq.prime.num.html">The Math Forum</a><br>
+    <a href="https://primes.utm.edu">The Prime Pages</a>
+</p>
+<p>
+The program files are also posted on<br>
+<a href="http://home.earthlink.net/~primes1e12/">
+http://home.earthlink.net/~primes1E12</a>.<br>
+Corrections and additions will be posted there 
+as they occur. 
+</p>
+<p class="cite">
+Don Kostuch<br>
+October, 2018.
+</p>
+<p>***END OF THE PROJECT GUTENBERG EBOOK PRIMES TO ONE TRILLION***</p>
+<p>******* This file should be named 58225-h.htm or 58225-h.zip *******</p>
+<p>This and all associated files of various formats will be found in:<br />
+<a href="http://www.gutenberg.org/dirs/5/8/2/2/58225">http://www.gutenberg.org/5/8/2/2/58225</a></p>
+<p>
+Updated editions will replace the previous one--the old editions will
+be renamed.</p>
+
+<p>Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg-tm electronic works to protect the PROJECT GUTENBERG-tm
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for the eBooks, unless you receive
+specific permission. If you do not charge anything for copies of this
+eBook, complying with the rules is very easy. You may use this eBook
+for nearly any purpose such as creation of derivative works, reports,
+performances and research. They may be modified and printed and given
+away--you may do practically ANYTHING in the United States with eBooks
+not protected by U.S. copyright law. Redistribution is subject to the
+trademark license, especially commercial redistribution.
+</p>
+
+<h2>START: FULL LICENSE<br />
+<br />
+THE FULL PROJECT GUTENBERG LICENSE<br />
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</h2>
+
+<p>To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full
+Project Gutenberg-tm License available with this file or online at
+www.gutenberg.org/license.</p>
+
+<h3>Section 1. General Terms of Use and Redistributing Project
+Gutenberg-tm electronic works</h3>
+
+<p>1.A. By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg-tm electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg-tm electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the
+person or entity to whom you paid the fee as set forth in paragraph
+1.E.8.</p>
+
+<p>1.B. "Project Gutenberg" is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg-tm
+electronic works. See paragraph 1.E below.</p>
+
+<p>1.C. The Project Gutenberg Literary Archive Foundation ("the
+Foundation" or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg-tm electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg-tm mission of promoting
+free access to electronic works by freely sharing Project Gutenberg-tm
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg-tm name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg-tm License when
+you share it without charge with others.</p>
+
+<p>1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg-tm work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country outside the United States.</p>
+
+<p>1.E. Unless you have removed all references to Project Gutenberg:</p>
+
+<p>1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg-tm License must appear
+prominently whenever any copy of a Project Gutenberg-tm work (any work
+on which the phrase "Project Gutenberg" appears, or with which the
+phrase "Project Gutenberg" is associated) is accessed, displayed,
+performed, viewed, copied or distributed:</p>
+
+<blockquote><p>This eBook is for the use of anyone anywhere in the United
+  States and most other parts of the world at no cost and with almost
+  no restrictions whatsoever. You may copy it, give it away or re-use
+  it under the terms of the Project Gutenberg License included with
+  this eBook or online
+  at <a href="http://www.gutenberg.org">www.gutenberg.org</a>. If you
+  are not located in the United States, you'll have to check the laws
+  of the country where you are located before using this
+  ebook.</p></blockquote>
+
+<p>1.E.2. If an individual Project Gutenberg-tm electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase "Project
+Gutenberg" associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg-tm
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.</p>
+
+<p>1.E.3. If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg-tm License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.</p>
+
+<p>1.E.4. Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.</p>
+
+<p>1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.</p>
+
+<p>1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg-tm work in a format
+other than "Plain Vanilla ASCII" or other format used in the official
+version posted on the official Project Gutenberg-tm web site
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original "Plain
+Vanilla ASCII" or other form. Any alternate format must include the
+full Project Gutenberg-tm License as specified in paragraph 1.E.1.</p>
+
+<p>1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.</p>
+
+<p>1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works
+provided that</p>
+
+<ul>
+<li>You pay a royalty fee of 20% of the gross profits you derive from
+  the use of Project Gutenberg-tm works calculated using the method
+  you already use to calculate your applicable taxes. The fee is owed
+  to the owner of the Project Gutenberg-tm trademark, but he has
+  agreed to donate royalties under this paragraph to the Project
+  Gutenberg Literary Archive Foundation. Royalty payments must be paid
+  within 60 days following each date on which you prepare (or are
+  legally required to prepare) your periodic tax returns. Royalty
+  payments should be clearly marked as such and sent to the Project
+  Gutenberg Literary Archive Foundation at the address specified in
+  Section 4, "Information about donations to the Project Gutenberg
+  Literary Archive Foundation."</li>
+
+<li>You provide a full refund of any money paid by a user who notifies
+  you in writing (or by e-mail) within 30 days of receipt that s/he
+  does not agree to the terms of the full Project Gutenberg-tm
+  License. You must require such a user to return or destroy all
+  copies of the works possessed in a physical medium and discontinue
+  all use of and all access to other copies of Project Gutenberg-tm
+  works.</li>
+
+<li>You provide, in accordance with paragraph 1.F.3, a full refund of
+  any money paid for a work or a replacement copy, if a defect in the
+  electronic work is discovered and reported to you within 90 days of
+  receipt of the work.</li>
+
+<li>You comply with all other terms of this agreement for free
+  distribution of Project Gutenberg-tm works.</li>
+</ul>
+
+<p>1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg-tm electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from both the Project Gutenberg Literary Archive Foundation and The
+Project Gutenberg Trademark LLC, the owner of the Project Gutenberg-tm
+trademark. Contact the Foundation as set forth in Section 3 below.</p>
+
+<p>1.F.</p>
+
+<p>1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg-tm collection. Despite these efforts, Project Gutenberg-tm
+electronic works, and the medium on which they may be stored, may
+contain "Defects," such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.</p>
+
+<p>1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.</p>
+
+<p>1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.</p>
+
+<p>1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.</p>
+
+<p>1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.</p>
+
+<p>1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg-tm
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg-tm work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg-tm work, and (c) any
+Defect you cause.  </p>
+
+<h3>Section 2. Information about the Mission of Project Gutenberg-tm</h3>
+
+<p>Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.</p>
+
+<p>Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at
+www.gutenberg.org.</p>
+
+<h3>Section 3. Information about the Project Gutenberg
+Literary Archive Foundation</h3>
+
+<p>The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation's EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state's laws.</p>
+
+<p>The Foundation's principal office is in Fairbanks, Alaska, with the
+mailing address: PO Box 750175, Fairbanks, AK 99775, but its
+volunteers and employees are scattered throughout numerous
+locations. Its business office is located at 809 North 1500 West, Salt
+Lake City, UT 84116, (801) 596-1887. Email contact links and up to
+date contact information can be found at the Foundation's web site and
+official page at www.gutenberg.org/contact</p>
+
+<p>For additional contact information:</p>
+
+<p> Dr. Gregory B. Newby<br />
+    Chief Executive and Director<br />
+    gbnewby@pglaf.org</p>
+
+<h3>Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation</h3>
+
+<p>Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.</p>
+
+<p>The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular
+state visit <a href="http://www.gutenberg.org/donate">www.gutenberg.org/donate</a>.</p>
+
+<p>While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.</p>
+
+<p>International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.</p>
+
+<p>Please check the Project Gutenberg Web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate</p>
+
+<h3>Section 5. General Information About Project Gutenberg-tm electronic works.</h3>
+
+<p>Professor Michael S. Hart was the originator of the Project
+Gutenberg-tm concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg-tm eBooks with only a loose network of
+volunteer support.</p>
+
+<p>Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.</p>
+
+<p>Most people start at our Web site which has the main PG search
+facility: www.gutenberg.org</p>
+
+<p>This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.</p>
+
+</body>
+</html>
+
