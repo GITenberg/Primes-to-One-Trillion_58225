@@ -1,11 +1,16 @@
 _repo: Primes-to-One-Trillion_58225
 _version: 0.1.0
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   editor:
     agent_name: Kostuch, Don
     gutenberg_agent_id: '49836'
     url: http://www.gutenberg.org/2009/agents/49836
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/58225#Primes-to-One-Trillion
 gutenberg_issued: '2018-11-03'
 gutenberg_type: Text
 identifiers:
